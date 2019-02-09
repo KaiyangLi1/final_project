@@ -1,0 +1,36 @@
+#version 330 core
+
+//value passed in
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec3 aColour;
+layout (location = 2) in vec2 aTexCoord;  //texture coordinate associated with this position
+layout (location = 3) in vec3 aNormal;
+
+//will be passed to fragment shaders in of the same name
+out vec4 vertexColour;
+out vec2 TexCoord; // to pass onto fragment shader
+out vec3 Normal;
+out vec3 FragPos;
+
+uniform mat4 model;  //takes local coordinates for our triangle and moves it to world 
+uniform mat4 view;  //moves world space aroun based on camera
+uniform mat4 projection; //convert to normalised device coordinates and applies perspective
+
+void main(){
+		//vertex shader MUST set a vec4 value for gl_position to help with
+		//shape assembly
+		//note: miltiple right to left with matrices
+		gl_Position = projection*view*model*vec4(aPos, 1.0);
+		
+		vertexColour = vec4(aColour, 1.0);
+		TexCoord = aTexCoord;
+
+		//Direction which this surface is facing
+		Normal = mat3(transpose(inverse(model)))*aNormal; //get value in from vbo, pass it out to the fragment shader
+
+		//I want this vertexes position based on where it is in the world
+		//to do that , we need to multiply model against vertex position
+		//finally, I only need a vec3, not a vec4.If you make a vec3 and pass it a vec4, it will clip 
+		//the last value
+		FragPos = vec3(model* vec4(aPos, 1.0));
+}

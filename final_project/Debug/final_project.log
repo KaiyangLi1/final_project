@@ -1,0 +1,42 @@
+﻿  main.cpp
+d:\visual studio projects\final_project\final_project\shader.h(53): warning C4101: 'infoLog': unreferenced local variable
+d:\visual studio projects\final_project\final_project\shader.h(52): warning C4101: 'success': unreferenced local variable
+d:\visual studio projects\final_project\final_project\main.cpp(166): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\visual studio projects\final_project\final_project\main.cpp(379): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\visual studio projects\final_project\final_project\main.cpp(380): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\visual studio projects\final_project\final_project\main.cpp(381): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\visual studio projects\final_project\final_project\main.cpp(402): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\visual studio projects\final_project\final_project\main.cpp(403): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\visual studio projects\final_project\final_project\main.cpp(404): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+d:\visual studio projects\final_project\final_project\main.cpp(419): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual studio projects\final_project\final_project\main.cpp(420): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual studio projects\final_project\final_project\main.cpp(424): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\visual studio projects\final_project\final_project\main.cpp(425): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\visual studio projects\final_project\final_project\main.cpp(426): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual studio projects\final_project\final_project\main.cpp(427): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual studio projects\final_project\final_project\main.cpp(434): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  final_project.vcxproj -> D:\Visual Studio Projects\final_project\Debug\final_project.exe
